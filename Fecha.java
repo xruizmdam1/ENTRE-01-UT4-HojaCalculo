@@ -2,7 +2,7 @@
 /**
  *  Modela una fecha
  *  
- *  @author - 
+ *  @author - Xabier Ruiz Melero
  */
 public class Fecha
 {
@@ -74,8 +74,8 @@ public class Fecha
      * Devuelve una copia exacta al objeto actual
      */
     public Fecha obtenerCopia() {
-         return null;
-
+         Fecha fecha = new Fecha(this.dia, this.mes, this.año);
+         return fecha;
     }
 
     /**
@@ -83,9 +83,5 @@ public class Fecha
      */
     public String toString() {
         return this.dia + "/"  + this.mes+ "/" + this.año;
-
     }
-
-    
-
 }
